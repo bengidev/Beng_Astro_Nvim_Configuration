@@ -15,6 +15,7 @@ return {
     "catppuccin/nvim", 
     name = "catppuccin", 
     opts = {
+      priority = 1000,
       flavour = "mocha", -- latte, frappe, macchiato, mocha
       transparent_background = true, -- disables setting the background color.
       background = { -- :h background
