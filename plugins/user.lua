@@ -19,7 +19,7 @@ return {
       flavour = "mocha", -- latte, frappe, macchiato, mocha
       transparent_background = true, -- disables setting the background color.
       background = { -- :h background
-        light = "mocha",
+        light = "latte",
         dark = "mocha",
       },
       integrations = {
