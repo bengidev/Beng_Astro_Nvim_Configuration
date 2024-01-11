@@ -33,8 +33,19 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
+  
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+
+  x = {
+    -- Visual Block --
+    -- Move text up and down
+    ["J"] = { ":m '>+1<CR>gv=gv", desc = "Move text up and down" },
+    ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move text up and down" },
+    ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move text up and down" },
+    ["<M-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move text up and down" },
+  },
+  
 }
