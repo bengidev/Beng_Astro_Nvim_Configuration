@@ -6,4 +6,8 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+
+  -- (Neo)Vim plugin for automatically highlighting other uses of the word
+  { import = "astrocommunity.bars-and-lines.vim-illuminate" }
+  
 }
