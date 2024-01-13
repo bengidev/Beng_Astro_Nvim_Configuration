@@ -9,7 +9,7 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-  
+
   -- Catppuccin for (Neo)bvim  
   { 
     "catppuccin/nvim", 
@@ -39,8 +39,22 @@ return {
     },
   },
 
+  -- Neovim statusline
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    event = "VeryLazy",
+    config = function()
+      require("lualine").setup {
+        opts = {
+          theme = "palenight",
+        },
+      }
+    end
+  },
+
   -- Telescope
-   {
+  {
     "nvim-telescope/telescope.nvim",
     optional = true,
     opts = {
@@ -50,6 +64,6 @@ return {
       },
     },
   },
-  
+
 }
 
